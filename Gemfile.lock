@@ -123,6 +123,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml (~> 4.0.7)
   middleman (~> 3.3.12)
   middleman-livereload (~> 3.1.0)
   tzinfo-data
