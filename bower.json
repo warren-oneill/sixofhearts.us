@@ -14,6 +14,7 @@
     "tests"
   ],
   "devDependencies": {
-    "pure": "~0.6.0"
+    "pure": "~0.6.0",
+    "velocity": "~1.2.2"
   }
 }
