@@ -7,7 +7,6 @@ $logo-color: black;
 
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 100;
   background-color: $background-color;
   a {
     color: black;
@@ -26,10 +25,17 @@ body {
 
   .greater-column {
     width: 62%;
+
+    p {
+      font-size: 2em;
+      line-height: 1.75em;
+      margin-top: 1em;
+    }
   }
 
   .nav-links, .social-links {
     list-style: none;
+    font-weight: 900;
     text-transform: uppercase;
     font-size: 1.75em;
     a {
