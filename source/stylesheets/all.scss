@@ -72,6 +72,10 @@ a {
     li {
       margin-right: 0.25em;
     }
+    .twitter a:hover { color: #4099FF; }
+    .linkedin a:hover { color: #007BB6; }
+    .github a:hover { color: gray; }
+    .email a:hover { color: $lime-green; }
   }
 
   .portrait {
