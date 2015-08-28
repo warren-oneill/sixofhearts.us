@@ -3,16 +3,23 @@
 
 $background-color: #F7F877;
 $logo-color: black;
-
+$text-color: black;
+$off-red: #F03535;
+$lime-green: #14C123;
 
 body {
   font-family: 'Alegreya Sans', sans-serif;
   background-color: $background-color;
-  a {
-    color: black;
-  }
 }
 
+a {
+  color: $off-red;
+  text-decoration: underline;
+  transition: color 0.125s;
+  &:hover {
+    color: $lime-green;
+  }
+}
 
 .homepage {
   display: flex;
@@ -21,14 +28,23 @@ body {
     width: 38%;
     padding: 1em;
     text-align: center;
+    a {
+      color: $text-color;
+      &:hover {
+	color: $off-red;
+	transition: color 0.125s;
+      }
+    }
   }
 
   .greater-column {
     width: 62%;
-
+    padding: 1em;
+    
     p {
       font-size: 2em;
-      line-height: 1.75em;
+      letter-spacing: 1px;
+      line-height: 1.5em;
       margin-top: 1em;
     }
   }
@@ -38,10 +54,21 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 1.75em;
+    line-height: 1.75em;
     a {
       text-decoration: none;
     }
   }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      margin: 0.25em;
+    }
+  }
+
 
   .portrait {
     position: fixed;
@@ -56,10 +83,6 @@ body {
     }
   }
 
-}
-
-.social-links {
-  display: flex;
 }
 
 .logomark {

@@ -1,8 +1,23 @@
 = link_to "Looking For My Non-Professional Stuff? That's Here &rarr;", 'http://paul-s-chun.sixofhearts.us/'
 
-%p Hello. My name is Paul S. Chun, but I go by sixofhearts on most things Internet. [Why?]
+%p
+  Hello. My name is Paul S. Chun, but I go by
+  %b sixofhearts
+  on most things Internet.
+  %small= link_to "(Why?)", "#"
 
-%p I'm currently the CTO at [Rivalfox]. I previously coded at [Heyzap] and in various consulting jobs.
+%p
+  I'm currently the CTO at
+  = succeed '.' do
+    = link_to 'Rivalfox', 'https://rivalfox.com/'
+  I previously coded at
+  = link_to 'Heyzap', 'https://www.heyzap.com/'
+  and in various consulting jobs.
 
 %p I'm interested in building teams of mindful people that collaborate on creating elegant user experiences, clean code and high-functioning architectures.
 
+%p
+  Some of the things I've written about recently include:
+  %ul
+    %li= link_to "Docker Is Awesome (Jul 16, 2015)", "#"
+    %li= link_to "Paul Is Awesome (Jun 1, 2015)", "#"
