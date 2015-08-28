@@ -78,6 +78,7 @@ h3 {
     font-size: 1.25em;
     font-weight: bold;
     margin-top: 0.25em;
+    margin-bottom: 0;
 }
 
 .level-1 {
@@ -97,7 +98,8 @@ h3 {
 }
 
 .field {
-    font-weight: bold;
+  margin-top: 0.35em;
+  font-weight: bold;
 }
 
 .secondary {
