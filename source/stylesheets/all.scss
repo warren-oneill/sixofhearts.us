@@ -27,7 +27,7 @@ a {
   .lesser-column {
     width: 38%;
     padding: 1em;
-    text-align: center;
+    margin-left: 3em;
     a {
       color: $text-color;
       &:hover {
@@ -50,25 +50,29 @@ a {
   }
 
   .nav-links, .social-links {
+    margin: 0 0 0 0.75em;
+    padding: 0;
     list-style: none;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 1.75em;
-    line-height: 1.75em;
+    line-height: 1.9em;
     a {
       text-decoration: none;
     }
   }
 
-  .social-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    li {
-      margin: 0.25em;
-    }
+  .nav-links {
+    margin-top: 0.5em;
   }
 
+  .social-links {
+    display: flex;
+    align-items: flex-start;
+    li {
+      margin-right: 0.25em;
+    }
+  }
 
   .portrait {
     position: fixed;
@@ -87,13 +91,12 @@ a {
 
 .logomark {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   text-decoration: none;
-  height: 200px;
+  padding-left: 0.5em;
 
   svg {
-    height: 100px;
+    height: 130px;
     transition: all 0.4s;
   }
 
@@ -110,14 +113,15 @@ a {
 
   .vi {
     svg {
-      width: 85px;
+      width: 90px;
     }
 
     &.pump {
       svg {
-	width: 70px;
+	width: 60px;
+	margin-left: 30px;
 	path, rect {
-	  fill: lightred;
+	  fill: crimson;
 	}
       }
     }
@@ -125,7 +129,7 @@ a {
 
   .heart {
     svg {
-      width: 120px;
+      width: 121px;
     }
 
     &.pump {
