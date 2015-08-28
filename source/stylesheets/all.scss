@@ -1,61 +1,111 @@
+//= require "bootstrap/dist/css/bootstrap.min.css"
+//= require "fontawesome/css/font-awesome.min.css"
+
+$background-color: #F7F877;
+$logo-color: black;
+
+
 body {
   font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 100;
+  background-color: $background-color;
+  a {
+    color: black;
+  }
 }
 
-header {
-  min-height: 200px;
 
-  .logomark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    height: 200px;
+.homepage {
+  display: flex;
+
+  .lesser-column {
+    width: 38%;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .greater-column {
+    width: 62%;
+  }
+
+  .nav-links, .social-links {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .portrait {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 424px;
 
     svg {
-      height: 100px;
-      transition: all 0.4s;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
+  }
 
+}
+
+.social-links {
+  display: flex;
+}
+
+.logomark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 200px;
+
+  svg {
+    height: 100px;
+    transition: all 0.4s;
+  }
+
+  path, rect {
+    fill: $logo-color;
+    transition: all 0.4s;
+  }
+
+  &:hover {
     path, rect {
-      fill: black;
-      transition: all 0.4s;
+      fill: red;
+    }
+  }
+
+  .vi {
+    svg {
+      width: 85px;
     }
 
-    &:hover {
-      path, rect {
-	fill: red;
-      }
-    }
-
-    .vi {
+    &.pump {
       svg {
-	width: 85px;
-      }
-
-      &.pump {
-	svg {
-	  width: 50px;
-	  path, rect {
-	    fill: lightred;
-	  }
-	}
-      }
-    }
-
-    .heart {
-      svg {
-	width: 120px;
-      }
-
-      &.pump {
-	svg {
-	  height: 135px;
-	  width: 165px;
-	}
+	width: 70px;
 	path, rect {
-	    fill: darkred;
+	  fill: lightred;
 	}
+      }
+    }
+  }
+
+  .heart {
+    svg {
+      width: 120px;
+    }
+
+    &.pump {
+      svg {
+	height: 125px;
+	width: 155px;
+      }
+      path, rect {
+	fill: darkred;
       }
     }
   }

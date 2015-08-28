@@ -1,14 +1,20 @@
 ---
 title: sixofhearts makes things.
+layout: false
 ---
 
-%ul
-  = list_of %w(resume curriculum_vitae) do |path|
-    = link_to path, "/" << path
-  %li= link_to :paul, 'http://paul-s-chun.sixofhearts.us/'
+!!!
+%html
+  %head
+    %meta(charset="utf-8")
+    %meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
+    %title= current_page.data.title || 'sixofhearts'
+    %link(href="//fonts.googleapis.com/css?family=Alegreya+Sans:100,400,900" rel="stylesheet" type="text/css")
+    = stylesheet_link_tag 'all'
+  %body
+    .homepage
+      .lesser-column
+        = partial 'index__lesser_content'
+        .portrait= partial 'portrait'
+      .greater-column= partial 'index__greater_content'
 
-%ul
-  %li github
-  %li twitter
-  %li linkedin
-  %li email
