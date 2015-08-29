@@ -2,10 +2,10 @@
 //= require "fontawesome/css/font-awesome.min.css"
 
 $background-color: #F7F877;
-$logo-color: black;
 $text-color: black;
 $off-red: #F03535;
 $lime-green: #14C123;
+$logo-color: black;
 
 body {
   font-family: 'Alegreya Sans', sans-serif;
@@ -24,8 +24,20 @@ a {
 .homepage {
   display: flex;
 
+  #personal-page-link {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5em 1em;
+    background-color: white;
+    border: 1px solid #FF7;
+  }
+
   .lesser-column {
-    width: 38%;
+    position: fixed;
+    left: 0;
+    top: 0;
     padding: 1em;
     margin-left: 3em;
     a {
@@ -38,14 +50,28 @@ a {
   }
 
   .greater-column {
-    width: 62%;
+    margin-left: 350px;
     padding: 1em;
+    padding-top: 4.75em;
     
-    p {
-      font-size: 2em;
-      letter-spacing: 1px;
+    p, ul {
+      font-weight: 100;
+      font-size: 2.25em;
+      letter-spacing: -1px;
       line-height: 1.5em;
       margin-top: 1em;
+      a {
+	font-weight: 400;
+	text-decoration: none;
+	&:hover {
+	  text-decoration: underline;
+	}
+      }
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -56,6 +82,7 @@ a {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 1.75em;
+    letter-spacing: -1px;
     a {
       text-decoration: none;
     }
@@ -139,9 +166,9 @@ a {
     transition: all 0.4s;
   }
 
-  &:hover {
+  &:hover, &.red {
     path, rect {
-      fill: red;
+      fill: $off-red;
     }
   }
 

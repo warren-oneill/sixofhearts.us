@@ -1,14 +1,21 @@
 //=require velocity/velocity.min.js
 
 const logomark = document.querySelector('.logomark');
-const links = document.querySelectorAll('.nav-links a');
+const links = document.querySelector('.nav-links');
+var pumpInterval;
 
-logomark.addEventListener('mouseenter', function() {
-  var pumping = setInterval(function(){ pumpHeart() }, 1000);
-  pumpHeart();
-  logomark.addEventListener('mouseout', function(e) {
-    clearInterval(pumping);
-  });
+links.addEventListener('mouseenter', function() {
+  if (!pumpInterval) {
+    logomark.className = 'logomark red';
+    pumpInterval = setInterval(function(){ pumpHeart() }, 1000);
+    pumpHeart();
+  }
+});
+
+links.addEventListener('mouseout', function(e) {
+  logomark.className = 'logomark';
+  clearInterval(pumpInterval);
+  pumpInterval = null;
 });
 
 function pumpHeart() {
