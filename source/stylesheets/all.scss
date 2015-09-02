@@ -1,7 +1,7 @@
 //= require "bootstrap/dist/css/bootstrap.min.css"
 //= require "fontawesome/css/font-awesome.min.css"
 
-$background-color: #F7F877;
+$background-color: rgb(249, 249, 155);
 $text-color: black;
 $off-red: #F03535;
 $lime-green: #14C123;
@@ -10,12 +10,12 @@ $logo-color: black;
 body {
   font-family: 'Alegreya Sans', sans-serif;
   background-color: $background-color;
+  transition: all 0.5s;
 }
 
 a {
   color: $off-red;
   text-decoration: underline;
-  transition: color 0.125s;
   &:hover {
     color: $lime-green;
   }
@@ -23,132 +23,126 @@ a {
 
 .homepage {
   display: flex;
+}
 
-  #personal-page-link {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 0.5em 1em;
-    background-color: white;
-    border: 1px solid #FF7;
+#personal-page-link {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5em 1em;
+  background-color: white;
+  border: 1px solid #FF7;
+}
+
+.lesser-column {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 1em;
+  margin-left: 3em;
+  a {
+    color: $text-color;
+    transition: background-color 0.125s;
+    &:hover {
+      color: $off-red;
+    }
   }
+}
 
-  .lesser-column {
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 1em;
-    margin-left: 3em;
+.greater-column {
+  margin: 0 75px 0 550px;
+  padding: 0 1em 1em 1em;
+  
+  p, ul {
+    font-weight: 100;
+    font-size: 2.25em;
+    line-height: 1.75em;
+    margin-top: 1em;
     a {
-      color: $text-color;
-      &:hover {
-	color: $off-red;
-	transition: all 0.125s;
-      }
-    }
-  }
-
-  .greater-column {
-    margin-left: 350px;
-    padding: 1em;
-    padding-top: 4.75em;
-    
-    p, ul {
-      font-weight: 100;
-      font-size: 2.25em;
-      letter-spacing: -1px;
-      line-height: 1.5em;
-      margin-top: 1em;
-      a {
-	font-weight: 400;
-	text-decoration: none;
-	&:hover {
-	  text-decoration: underline;
-	}
-      }
-    }
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  .nav-links, .social-links {
-    margin: 0 0 0 0.75em;
-    padding: 0;
-    list-style: none;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 1.75em;
-    letter-spacing: -1px;
-    a {
+      font-weight: 400;
       text-decoration: none;
     }
   }
-
-  .nav-links {
-    margin-top: 0.5em;
-    a {
-      display: inline-block;
-      padding: 0.15em 0.4em;
-      margin: 0.1em;
-      &:hover {
-	text-shadow: 1px 1px 0 black;
-	color: white;
-	background-color: $lime-green;
-	border-radius: 5px;
-      }
-    }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-
-  .social-links {
-    display: flex;
-    align-items: flex-start;
-    li {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 0.25em;
-      width: 2em;
-      height: 2em;
-
-      a {
-	transition: all 0.25s;
-	&:hover, &.hoverEffect {
-	  font-size: 2em;
-	}
-      }
-    }
-    .twitter {
-      a:hover, a.hoverEffect { color: #4099FF; }
-    }
-    .linkedin {
-      a:hover, a.hoverEffect { color: #007BB6; }
-    }
-    .github {
-      a:hover, a.hoverEffect { color: gray; }
-    }
-    .email {
-      a:hover, a.hoverEffect { color: $lime-green; }
-    }
-  }
-
-  .portrait {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 424px;
-
-    svg {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-  }
-
 }
+
+.nav-links, .social-links {
+  margin: 0 0 0 0.75em;
+  padding: 0;
+  list-style: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.75em;
+  letter-spacing: -1px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.nav-links {
+  margin-top: 0.5em;
+  a {
+    display: inline-block;
+    padding: 0.15em 0.4em;
+    margin: 0.1em;
+    &:hover {
+      //text-shadow: 1px 1px 0 black;
+      color: white;
+      background-color: $off-red;
+      border-radius: 5px;
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.25em;
+    width: 2em;
+    height: 2em;
+
+    a {
+      transition: all 0.25s;
+      &:hover, &.hoverEffect {
+	font-size: 2em;
+      }
+    }
+  }
+  .twitter {
+    a:hover, a.hoverEffect { color: #4099FF; }
+  }
+  .linkedin {
+    a:hover, a.hoverEffect { color: #007BB6; }
+  }
+  .github {
+    a:hover, a.hoverEffect { color: gray; }
+  }
+  .email {
+    a:hover, a.hoverEffect { color: $lime-green; }
+  }
+}
+
+.portrait {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 424px;
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
 
 .logomark {
   display: flex;
@@ -201,6 +195,62 @@ a {
       path, rect {
 	fill: darkred;
       }
+    }
+  }
+}
+
+
+@media screen and (max-device-width: 768px),
+screen and (min-device-width: 768px) and (max-width: 768px)
+{
+  #personal-page-link {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .homepage {
+    display: block;
+  }
+
+  .lesser-column {
+    position: relative;
+    text-align: center;
+  }
+
+  .greater-column {
+    margin: 1em;
+    text-align: center;
+  }
+
+  .portrait {
+    position: relative;
+  }
+
+  .nav-links {
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .logomark {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  a.view-all {
+    display: inline-block;
+    border: 2px solid $off-red;
+    padding: 0.25em 1em;
+    margin-top: 1em;
+    &:hover {
+      background-color: $off-red;
+      color: white;
+      text-decoration: none;
     }
   }
 }

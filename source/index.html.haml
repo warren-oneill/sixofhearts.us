@@ -13,11 +13,11 @@ layout: false
     = stylesheet_link_tag 'all'
   %body
     .homepage
-      = link_to "Family member or friend? My personal stuff is here &rarr;",
+      %p= link_to "Family member or friend? My personal stuff is here &rarr;",
         'http://paul-s-chun.sixofhearts.us/',
         id: "personal-page-link"
-      .portrait= partial 'portrait'
       .lesser-column
         = partial 'index__lesser_content'
       .greater-column= partial 'index__greater_content'
+      .portrait= partial 'portrait'
     = javascript_include_tag  'all'

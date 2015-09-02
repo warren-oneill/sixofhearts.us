@@ -4,18 +4,16 @@ const logomark = document.querySelector('.logomark');
 const links = document.querySelector('.nav-links');
 var pumpInterval;
 
-links.addEventListener('mouseenter', function() {
+logomark.addEventListener('mouseenter', function() {
   if (!pumpInterval) {
-    logomark.className = 'logomark red';
     pumpInterval = setInterval(function(){ pumpHeart() }, 1000);
     pumpHeart();
-  }
-});
 
-links.addEventListener('mouseout', function(e) {
-  logomark.className = 'logomark';
-  clearInterval(pumpInterval);
-  pumpInterval = null;
+    logomark.addEventListener('mouseleave', function(e) {
+      clearInterval(pumpInterval);
+      pumpInterval = null;
+    });
+  }
 });
 
 function pumpHeart() {
