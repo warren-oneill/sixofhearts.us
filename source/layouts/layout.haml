@@ -5,24 +5,14 @@
     %meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
     %title= current_page.data.title || 'sixofhearts'
     %link(href="//fonts.googleapis.com/css?family=Alegreya+Sans:100,400,900" rel="stylesheet" type="text/css")
-    = stylesheet_link_tag 'all'
+    = stylesheet_link_tag 'articles'
   %body
     %header
-      %a.logomark(href="/")
-        %span.vi
-          %svg(width="158px" height="181px" viewBox="0 0 158 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns")
-            %g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
-              %g
-                %path(d="M20.8193169,0 C20.8193169,-6.27969898e-16 23.67,10 23.67,10 L31,32 L66,137 L74.67,111 L92.02,56 L110.757393,0 L130.073059,0 L113.67,49 L85,135 L70,181 L59.6029892,181 L56,169 L46.33,140 L31,95 L17.95,56 L6,21 L0,0 L12,0 C12,0 20.8193169,-6.27969898e-16 20.8193169,0 Z" id="Selection" sketch:type="MSShapeGroup")
-                %rect(id="Rectangle-1" sketch:type="MSShapeGroup" x="142" y="0" width="16" height="181")
-
-        %span.heart
-          %svg(width="216px" height="181px" viewBox="158 0 216 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns")
-            %g(stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage")
-              %g
-                %path(d="M178.46,84.0682066 C173.66,71.6648934 173.98,61.3189081 174,48.460609 C174.05,15.5037992 206.62,-6.48389228 238,1.72563716 C256.9,6.68102783 262.1,14.9696853 274,28.6786103 C292.92,-3.86277746 339.16,-10.252363 363.32,20.7658109 C373.94,34.3956079 373.19,46.2549161 373,62.3080081 C372.53,101.763204 336.98,126.015935 310,149.497167 L273,181 L214,128.646941 C198.94,115.135835 185.93,103.365546 178.46,84.0682066 Z" id="Selection-#2" sketch:type="MSShapeGroup")
-
-    .content
+      %ul
+        %li= link_to 'Home', '/'
+        %li= link_to 'Articles', '/articles'
+        %li= link_to 'Sixofhearts', '/'
+        %li= link_to 'Contact', '/'
+        %li= partial 'social_links'
+    .container
       = yield
-    %footer
-    = javascript_include_tag  'all'
