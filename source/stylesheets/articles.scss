@@ -1,0 +1,56 @@
+//= require "bootstrap/dist/css/bootstrap.min"
+
+$background-color: rgb(249, 249, 155);
+$text-color: black;
+$off-red: #F03535;
+$lime-green: #14C123;
+$logo-color: black;
+
+body {
+  background-color: $background-color;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top {
+  background-color: black;
+  .top {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    li {
+      width: 150px;
+      text-align: center;
+    }
+  }
+}
+
+
+.colors {
+  display: flex;
+  .color-1, .color-2, .color-3 {
+    height: 3px;
+    width: 33.33%;
+  }
+  .color-1 {
+    background-color: $lime-green;
+  }
+  .color-2 {
+    background-color: black;
+  }
+  .color-3 {
+    background-color: $off-red;
+  }
+}
+
+article {
+  border: 1px solid #FF6;
+  margin-top: 100px;
+  padding-bottom: 1em;
+  background-color: white;
+
+  .title {
+    font-size: 2em;
+  }
+}

@@ -2,3 +2,38 @@
 title: sixofhearts makes things.
 ---
 
+.container
+  .row
+    .col-xs-9
+      - 2.times do
+        %article
+          .colors
+            .color-1
+            .color-2
+            .color-3
+          .title Some Article
+    .col-xs-3
+      %article
+        .colors
+          .color-1
+          .color-2
+          .color-3
+        %h2 About the Author
+        = gravatar
+        %p
+          Hello. My name is Paul S. Chun, but I go by sixofhearts
+          on most things Internet.
+        %h2 Contact Me
+        1 2 3 4
+
+      %article
+        .colors
+          .color-1
+          .color-2
+          .color-3
+        %h2 Recent Posts
+        %ul
+          %li= link_to 'Post 4', '#'
+          %li= link_to 'Post 3', '#'
+          %li= link_to 'Post 2', '#'
+          %li= link_to 'Post 1', '#'

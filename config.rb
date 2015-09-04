@@ -43,11 +43,13 @@ end
 activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  GRAVATAR_URL = 'https://secure.gravatar.com/avatar/' \
+                 '9ae5b4e01b73f20befe74e14bf2c9d9f?s=256'
+  def gravatar(options={})
+    image_tag GRAVATAR_URL, options
+  end
+end
 
 sprockets.append_path File.join root, 'bower_components'
 

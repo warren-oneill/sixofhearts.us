@@ -7,12 +7,14 @@
     %link(href="//fonts.googleapis.com/css?family=Alegreya+Sans:100,400,900" rel="stylesheet" type="text/css")
     = stylesheet_link_tag 'articles'
   %body
-    %header
-      %ul
-        %li= link_to 'Home', '/'
-        %li= link_to 'Articles', '/articles'
-        %li= link_to 'Sixofhearts', '/'
-        %li= link_to 'Contact', '/'
-        %li= partial 'social_links'
+    %nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        %ul.top
+          %li= link_to 'Home', '/'
+          %li= link_to 'Articles', '/articles'
+          %li= link_to 'Sixofhearts', '/'
+          %li= link_to 'Contact', '/'
+          %li= partial 'social_links'
     .container
+      .navbar-header
       = yield
