@@ -16,6 +16,11 @@ aside {
   .social-links {
     display: flex;
     justify-content: center;
+
+    svg {
+      height: 24px;
+    }
+
     li {
       padding: 1em;
     }

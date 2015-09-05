@@ -17,6 +17,11 @@ body {
 
 nav.navbar.navbar-default.navbar-fixed-top {
   background-color: black;
+
+  a {
+    color: white;
+  }
+
   .top {
     list-style: none;
     display: flex;
@@ -30,15 +35,14 @@ nav.navbar.navbar-default.navbar-fixed-top {
   }
 
   .social-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
-    a {
-      display: inline-block;
-      background-color: white;
-      padding: 3px;
-    }
     svg {
       fill: white;
+      height: 20px;
     }
   }
 }

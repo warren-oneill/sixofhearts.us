@@ -82,6 +82,9 @@ a {
   a {
     text-decoration: none;
   }
+  svg {
+    height: 32px;
+  }
 }
 
 .nav-links {
@@ -110,23 +113,25 @@ a {
     height: 2em;
 
     a {
-      transition: all 0.25s;
+      svg { transition: all 0.25s; }
       &:hover, &.hoverEffect {
-	font-size: 2em;
+	svg { 
+	  height: 48px;
+	}
       }
     }
   }
   .twitter {
-    a:hover, a.hoverEffect { color: #4099FF; }
+    a:hover svg, a.hoverEffect svg { fill: #4099FF; }
   }
   .linkedin {
-    a:hover, a.hoverEffect { color: #007BB6; }
+    a:hover svg, a.hoverEffect svg { fill: #007BB6; }
   }
   .github {
-    a:hover, a.hoverEffect { color: gray; }
+    a:hover svg, a.hoverEffect svg { fill: gray; }
   }
   .email {
-    a:hover, a.hoverEffect { color: $lime-green; }
+    a:hover svg, a.hoverEffect svg { fill: $lime-green; }
   }
 }
 
