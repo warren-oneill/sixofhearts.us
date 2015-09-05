@@ -24,19 +24,8 @@
 %p
   Some articles I've written recently are:
   %ul
-    %li
-      Jul 16, 2015 &mdash;
-      = link_to "Docker Is Awesome", "#"
-    %li
-      Jun 1, 2015 &mdash;
-      = link_to "Paul Is Awesome", "#"
-    %li
-      Jul 16, 2015 &mdash;
-      = link_to "Docker Is Awesome", "#"
-    %li
-      Jun 1, 2015 &mdash;
-      = link_to "Paul Is Awesome", "#"
-    %li
-      Jul 16, 2015 &mdash;
-      = link_to "Docker Is Awesome", "#"
+    = list_of article_feed[0, 5] do |article|
+      = article.data.published_at.strftime('%b %-e, %Y')
+      &mdash;
+      = link_to article.data.title, article.url
     %li= link_to "View All Posts &rarr;", "/articles", class: 'view-all'

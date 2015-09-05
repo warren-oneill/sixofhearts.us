@@ -54,6 +54,10 @@ helpers do
   def gravatar(options={})
     image_tag GRAVATAR_URL, options
   end
+
+  def article_feed
+    blog.articles.sort_by {|a| a.data.published_at }.reverse
+  end
 end
 
 sprockets.append_path File.join root, 'bower_components'
