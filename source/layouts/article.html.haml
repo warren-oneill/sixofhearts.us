@@ -20,6 +20,9 @@
                 .color-1
                 .color-2
                 .color-3
-            .article-content= yield
+            .article-content
+              %span.article-image
+                = image_tag(current_page.data.image) if current_page.data.image
+              = yield
 
       .col-md-3= partial '_sidebar'

@@ -1,6 +1,5 @@
 ---
 title: Dear Creativity
-image: ""
 published_at: 2015-09-05 14:27:03 +0200
 ---
 

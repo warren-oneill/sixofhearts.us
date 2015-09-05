@@ -40,8 +40,16 @@ article {
     background-color: white;
     padding: 2em 3em;
 
+    .article-image img {
+      max-width: 62%;
+      border: 5px solid white;
+      outline: 1px solid #CCC;
+      float: right;
+      margin: 0 0 3em 3em;
+    }
+
     p {
-      margin-top: 1em;
+      margin-bottom: 1em;
       font-size: 1.5em;
       line-height: 1.75em;
     }

@@ -1,9 +1,7 @@
 ---
 title: Three Things You Get For Free by Quitting Facebook
 image: "http://static.sixofhearts.us/tlhs_grad.jpg"
-published_at: 2015-09-05 14:27:03 +0200
-quote_text: "Your reputation is what you're perceived to be, your character is what you really are."
-quote_author: John Wooden
+published_at: 2015-09-07 20:11:15 +0200
 ---
 
 Given the different places I've been fortunate enough to have been in my twenties and the contacts I've accumulated along the way, deactivating my Facebook account was a hard decision. It's been the one sure bet on where I can find someone I'd met or get in touch with someone I wanted to contact. But the nagging question of "Why the hell am I looking at this right now?" that lingered in the back of my mind eventually triumphed, and I haven't looked back.
