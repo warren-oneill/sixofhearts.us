@@ -236,3 +236,8 @@ nav.navbar.navbar-default.navbar-fixed-top {
   /* line 126, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
   .colors .color-3 {
     background-color: #F03535; }
+
+/* line 131, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+footer {
+  opacity: 0.4;
+  padding: 1em 0; }
