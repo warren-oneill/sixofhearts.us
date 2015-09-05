@@ -3,7 +3,13 @@ $off-red: #F03535;
 
 .logomark {
   width: 80px;
-  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
   align-items: center;
   justify-content: flex-start;
   text-decoration: none;
@@ -28,6 +34,9 @@ $off-red: #F03535;
 
   .vi {
     margin-right: 3px;
+    svg {
+      max-width: 32px;
+    }
 
     &.pump {
       svg {
@@ -40,11 +49,17 @@ $off-red: #F03535;
     }
   }
 
-  .heart.pump {
+  .heart {
     svg {
-      height: 48px;
-      path, rect {
-	fill: darkred;
+      max-width: 32px;
+    }
+    &.pump {
+      svg {
+	height: 48px;
+	max-width: 48px;
+	path, rect {
+	  fill: darkred;
+	}
       }
     }
   }
