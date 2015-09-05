@@ -1,4 +1,5 @@
 /* * * CONFIGURATION VARIABLES * * */
+
 var disqus_shortname = 'sixofhearts';
 
 /* * * DON'T EDIT BELOW THIS LINE * * */
