@@ -1,0 +1,21 @@
+{
+  "name": "sixofhearts.us",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sixofhearts/sixofhearts.us",
+  "authors": [
+    "Paul S. Chun <paul@sixofhearts.us>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "velocity": "~1.2.2",
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.4.0"
+  }
+}

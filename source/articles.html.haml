@@ -1,0 +1,42 @@
+---
+title: All Articles
+---
+
+.container
+  .row
+    .col-md-9
+      %ul.article-list
+        = list_of article_feed do |article|
+          %article
+            %h1
+              = link_to article.data.title, article.url
+            %ul.metadata
+              %li.posted-at
+                %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABT0lEQVQ4T3WT4TEEQRCFv4sAGRDByQABKCeCIwKqBIAIkIEMUAI4MjgRIAL8V0V9U92r7e5N1db0zvR73e/17oS/tQkcADflLMNdYB24799NysETsAMcA7e9xJ94r/ntyAPZ3wIkwSUgWYJegI8g2ACmgGefSWCiIImS4Lx0sAcs4j1jd4u0DiR4iC5OgH3gsRAo6RTQoyPgDhgQmH8RrCbPCoGtCnTpjWYOCN5HjBsZRidzQPAcVZVgvAT6sTLtTK/s0pzOA0FK0CxjDdLIjAX4OC2N9t67fwQmXMelCemJlb6BM+ArdOmLps5yCrJp1BzQDwmMnbdfn8Rt7iVuk6kEqySo2S4s4AQEXkWhhQQyvwKHkaROARrmbgdJ4F6lLSVwtrabrfbHp+78LgTn6iTkX6a7q5ZzF7AWCXa5lSYmSK0+Y0uZGun9dkhq/8IvEVlrEHNnJ7cAAAAASUVORK5CYII=")
+                = article.data.published_at.strftime("%B %-e, %Y")
+              %li.author
+                %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9ElEQVQ4T6WT4ZEBQRBGnwhOBlwEiIAMyOCIABkQATK4y+BkQASIABmQgXpbM2pravbYuv4ztdvdb7q/7mmQtzawArrBfQTmwCUNb2TyTT4AzcR3A3opJAf4BYYVlW2BUdmXA1hmqwKg7/M/gCtgi0+r28IPMH4FUDxL/UjauIfbFfPPCrxhB6xLY/R7AfQBq6gEfANfoQITrMQ2FdVv+zdmEgllDbxxWqF++nsZgAVdk3x+M9kwdXCctwiYhdWtwShWex0Bsfc6gGKkEeDoVLrzJuEEDMotmCdEpV8JuQlxxT7kNtEn7C54OndtD/ikbdXzaQ/fGi0RJmOihwAAAABJRU5ErkJggg==")
+                Paul S. Chun
+              %li.comments
+                %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T6WTYQ3CMBQGbwrAATgAHMwBEgAlgANQwJCAAxzAHMwBoAByS0u2BDI6mrw/27tLX/s148+VfeBzYA5MQ9lyDXUCzk2mKRA4NKBve1O2CkKiYBnglIGUFArGwAUYptDAHZgpKIBFIhzbjwo0DXoKKgXPnnCNKaiAUU9JqWADrHsKtgo8fcMxSZSUQB5zoOSWIKhhL6CZxF8O8wHsQnl77yQaY8Pk2oeR/BbDZbMRdtQajCvuQKvNhqr1WLrG+vQau5jW/xe4tSQP9A9XzQAAAABJRU5ErkJggg==")
+                = link_to '0 Comments', article.url + '#disqus_thread'
+            .article-inner
+              .colors
+                .color-1
+                .color-2
+                .color-3
+            .article-content
+              %span.article-image
+                = image_tag(article.data.image) if article.data.image
+              = article.summary
+
+
+    .col-md-3= partial 'sidebar'
+
+!= '<div>Calendar and User Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>'
+
+!= '<div>Speech Bubble Icon made by <a href="http://yanlu.de" title="Yannick">Yannick</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>'
+
+!= '<div>LinkedIn, GitHub, Envelope Icon made by <a href="http://www.danielbruce.se" title="Daniel Bruce">Daniel Bruce</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>'
+
+!= '<div>Twitter Icon made by <a href="http://www.elegantthemes.com" title="Elegant Themes">Elegant Themes</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>'

@@ -1,0 +1,37 @@
+%p
+  Hello. My name is Paul S. Chun, but I go by
+  sixofhearts
+  on most things Internet.
+
+
+%p
+  I'm currently CTO at
+  = succeed '.' do
+    = link_to 'Rivalfox', 'https://rivalfox.com/'
+  I previously worked at
+  = link_to 'Heyzap', 'https://www.heyzap.com/'
+  and on various consulting jobs at places like
+  = link_to 'Autodesk', 'http://www.autodesk.com/'
+  and
+  = succeed '.' do
+    = link_to 'Society43', 'http://www.society43.com/'
+
+%p I'm interested in building teams of mindful people that collaborate on creating elegant user experiences, clean code and high-functioning architectures.
+
+%p I'm also interested in the topic of personal growth. I think my favorite part of my job is enabling personal growth as an extension of understanding what motivates a person.
+
+%p
+  Some articles I've written recently are:
+  %ul
+    = list_of article_feed[0, 5] do |article|
+      = article.data.published_at.strftime('%b %-e, %Y')
+      &mdash;
+      = link_to article.data.title, article.url
+    %li= link_to "View All Posts &rarr;", "/articles", class: 'view-all'
+
+%p
+  Also, I house my
+  = link_to "r&#233;sum&#233;", '/resume'
+  and
+  = link_to "curriculum vitae", '/curriculum_vitae'
+  on this page as well, if you're interested.
