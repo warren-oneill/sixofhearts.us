@@ -40,12 +40,12 @@ configure :development do
   activate :livereload
 end
 
-activate :directory_indexes
-
 activate :blog do |blog|
   blog.layout = 'article'
   blog.permalink = '{title}.html'
 end
+
+activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
 helpers do

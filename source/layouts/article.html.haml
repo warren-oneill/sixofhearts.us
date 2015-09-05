@@ -15,11 +15,11 @@
               %li.comments
                 %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T6WTYQ3CMBQGbwrAATgAHMwBEgAlgANQwJCAAxzAHMwBoAByS0u2BDI6mrw/27tLX/s148+VfeBzYA5MQ9lyDXUCzk2mKRA4NKBve1O2CkKiYBnglIGUFArGwAUYptDAHZgpKIBFIhzbjwo0DXoKKgXPnnCNKaiAUU9JqWADrHsKtgo8fcMxSZSUQB5zoOSWIKhhL6CZxF8O8wHsQnl77yQaY8Pk2oeR/BbDZbMRdtQajCvuQKvNhqr1WLrG+vQau5jW/xe4tSQP9A9XzQAAAABJRU5ErkJggg==")
                 10 Comments
-            .body
+            .article-inner
               .colors
                 .color-1
                 .color-2
                 .color-3
-              = yield
+            .article-content= yield
 
       .col-md-3= partial '_sidebar'

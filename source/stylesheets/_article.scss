@@ -7,6 +7,14 @@ article {
     font-weight: 700;
   }
 
+  h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-top: 1.5em;
+  }
+
   .metadata {
     font-size: 0.9em;
     padding: 0;
@@ -28,13 +36,13 @@ article {
     }
   }
 
-  .body {
+  .article-content {
     background-color: white;
+    padding: 2em 3em;
 
     p {
       font-size: 1.25em;
       line-height: 1.75em;
-      padding: 1.75em;
       font-weight: 300;
     }
   }
