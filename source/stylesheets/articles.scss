@@ -1,6 +1,7 @@
 //= require "bootstrap/dist/css/bootstrap.min"
 //= require "_sidebar"
 //= require "_article"
+//= require "_logomark"
 
 $mint-green: #E1F3E5;
 $background-color: #FFFFC0;
@@ -17,30 +18,6 @@ body {
 
 nav.navbar.navbar-default.navbar-fixed-top {
   background-color: black;
-
-  .logomark {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    svg {
-      height: 32px;
-      width: auto;
-      g {
-	fill: white;
-      }
-    }
-
-    .vi, .heart {
-      display: inline-block;
-    }
-
-    .vi {
-      margin-right: 3px;
-    }
-    .heart {
-    }
-  }
 
   a {
     color: white;

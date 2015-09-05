@@ -1,7 +1,6 @@
 //=require velocity/velocity.min.js
 
 const logomark = document.querySelector('.logomark');
-const links = document.querySelector('.nav-links');
 var pumpInterval;
 
 logomark.addEventListener('mouseenter', function() {
