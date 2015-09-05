@@ -1,0 +1,18 @@
+%aside
+  %ul
+    %li
+      .title About the Author
+      = gravatar class: 'portrait'
+      %p
+        Hello. My name is Paul S. Chun, but I go by sixofhearts
+        on most things Internet.
+    %li
+      .title Contact Me
+      = partial 'social_links'
+
+    %li
+      .title Recent Posts
+      %ul.recent-posts
+        = list_of blog.articles do |article|
+          .timestamp= article.data.published_at.strftime('%b %-e, %Y')
+          = link_to article.title, article.url

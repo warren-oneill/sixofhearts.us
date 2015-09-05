@@ -42,6 +42,11 @@ end
 
 activate :directory_indexes
 
+activate :blog do |blog|
+  blog.layout = 'article'
+  blog.permalink = '{title}.html'
+end
+
 # Methods defined in the helpers block are available in templates
 helpers do
   GRAVATAR_URL = 'https://secure.gravatar.com/avatar/' \

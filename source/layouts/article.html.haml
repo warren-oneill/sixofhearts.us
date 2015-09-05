@@ -1,6 +1,25 @@
 = wrap_layout :layout do
-  %article
-    .title
-    .metadata
-    .container
-      .post-content
+  .container
+    .row
+      .col-md-9
+        - 1.times do
+          %article
+            %h1= current_page.data.title
+            %ul.metadata
+              %li.posted-at
+                %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABT0lEQVQ4T3WT4TEEQRCFv4sAGRDByQABKCeCIwKqBIAIkIEMUAI4MjgRIAL8V0V9U92r7e5N1db0zvR73e/17oS/tQkcADflLMNdYB24799NysETsAMcA7e9xJ94r/ntyAPZ3wIkwSUgWYJegI8g2ACmgGefSWCiIImS4Lx0sAcs4j1jd4u0DiR4iC5OgH3gsRAo6RTQoyPgDhgQmH8RrCbPCoGtCnTpjWYOCN5HjBsZRidzQPAcVZVgvAT6sTLtTK/s0pzOA0FK0CxjDdLIjAX4OC2N9t67fwQmXMelCemJlb6BM+ArdOmLps5yCrJp1BzQDwmMnbdfn8Rt7iVuk6kEqySo2S4s4AQEXkWhhQQyvwKHkaROARrmbgdJ4F6lLSVwtrabrfbHp+78LgTn6iTkX6a7q5ZzF7AWCXa5lSYmSK0+Y0uZGun9dkhq/8IvEVlrEHNnJ7cAAAAASUVORK5CYII=")
+                = current_page.data.published_at.strftime("%B %-e, %Y")
+              %li.author
+                %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9ElEQVQ4T6WT4ZEBQRBGnwhOBlwEiIAMyOCIABkQATK4y+BkQASIABmQgXpbM2pravbYuv4ztdvdb7q/7mmQtzawArrBfQTmwCUNb2TyTT4AzcR3A3opJAf4BYYVlW2BUdmXA1hmqwKg7/M/gCtgi0+r28IPMH4FUDxL/UjauIfbFfPPCrxhB6xLY/R7AfQBq6gEfANfoQITrMQ2FdVv+zdmEgllDbxxWqF++nsZgAVdk3x+M9kwdXCctwiYhdWtwShWex0Bsfc6gGKkEeDoVLrzJuEEDMotmCdEpV8JuQlxxT7kNtEn7C54OndtD/ikbdXzaQ/fGi0RJmOihwAAAABJRU5ErkJggg==")
+                Paul S. Chun
+              %li.comments
+                %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T6WTYQ3CMBQGbwrAATgAHMwBEgAlgANQwJCAAxzAHMwBoAByS0u2BDI6mrw/27tLX/s148+VfeBzYA5MQ9lyDXUCzk2mKRA4NKBve1O2CkKiYBnglIGUFArGwAUYptDAHZgpKIBFIhzbjwo0DXoKKgXPnnCNKaiAUU9JqWADrHsKtgo8fcMxSZSUQB5zoOSWIKhhL6CZxF8O8wHsQnl77yQaY8Pk2oeR/BbDZbMRdtQajCvuQKvNhqr1WLrG+vQau5jW/xe4tSQP9A9XzQAAAABJRU5ErkJggg==")
+                10 Comments
+            .body
+              .colors
+                .color-1
+                .color-2
+                .color-3
+              = yield
+
+      .col-md-3= partial '_sidebar'
