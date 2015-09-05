@@ -90,10 +90,9 @@ a {
     display: inline-block;
     padding: 0.15em 0.4em;
     margin: 0.1em;
+    transition: all 0.25s;
     &:hover {
-      //text-shadow: 1px 1px 0 black;
-      color: white;
-      background-color: $off-red;
+      color: $lime-green;
       border-radius: 5px;
     }
   }
