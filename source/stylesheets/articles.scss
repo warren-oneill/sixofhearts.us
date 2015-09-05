@@ -1,14 +1,18 @@
 //= require "bootstrap/dist/css/bootstrap.min"
+//= require "_sidebar"
+//= require "_article"
 
-$background-color: rgb(249, 249, 155);
+$mint-green: #E1F3E5;
+$background-color: #FFFFC0;
 $text-color: black;
 $off-red: #F03535;
 $lime-green: #14C123;
 $logo-color: black;
 
 body {
-  background-color: $background-color;
-  font-family: 'Alegreya Sans', sans-serif;
+  background-color: $mint-green;
+  font-family: 'Catamaran', sans-serif;
+  margin-top: 6em;
 }
 
 nav.navbar.navbar-default.navbar-fixed-top {
@@ -24,14 +28,27 @@ nav.navbar.navbar-default.navbar-fixed-top {
       text-align: center;
     }
   }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    a {
+      display: inline-block;
+      background-color: white;
+      padding: 3px;
+    }
+    svg {
+      fill: white;
+    }
+  }
 }
 
 
 .colors {
   display: flex;
   .color-1, .color-2, .color-3 {
-    height: 3px;
-    width: 33.33%;
+    height: 4px;
+    width: 100%;
   }
   .color-1 {
     background-color: $lime-green;
@@ -41,16 +58,5 @@ nav.navbar.navbar-default.navbar-fixed-top {
   }
   .color-3 {
     background-color: $off-red;
-  }
-}
-
-article {
-  border: 1px solid #FF6;
-  margin-top: 100px;
-  padding-bottom: 1em;
-  background-color: white;
-
-  .title {
-    font-size: 2em;
   }
 }

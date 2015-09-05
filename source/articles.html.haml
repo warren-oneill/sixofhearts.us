@@ -5,35 +5,63 @@ title: sixofhearts makes things.
 .container
   .row
     .col-xs-9
-      - 2.times do
+      - 1.times do
         %article
-          .colors
-            .color-1
-            .color-2
-            .color-3
-          .title Some Article
-    .col-xs-3
-      %article
-        .colors
-          .color-1
-          .color-2
-          .color-3
-        %h2 About the Author
-        = gravatar
-        %p
-          Hello. My name is Paul S. Chun, but I go by sixofhearts
-          on most things Internet.
-        %h2 Contact Me
-        1 2 3 4
+          %h1 The Reason I Ate Everything
+          %ul.metadata
+            %li.posted-at
+              %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABT0lEQVQ4T3WT4TEEQRCFv4sAGRDByQABKCeCIwKqBIAIkIEMUAI4MjgRIAL8V0V9U92r7e5N1db0zvR73e/17oS/tQkcADflLMNdYB24799NysETsAMcA7e9xJ94r/ntyAPZ3wIkwSUgWYJegI8g2ACmgGefSWCiIImS4Lx0sAcs4j1jd4u0DiR4iC5OgH3gsRAo6RTQoyPgDhgQmH8RrCbPCoGtCnTpjWYOCN5HjBsZRidzQPAcVZVgvAT6sTLtTK/s0pzOA0FK0CxjDdLIjAX4OC2N9t67fwQmXMelCemJlb6BM+ArdOmLps5yCrJp1BzQDwmMnbdfn8Rt7iVuk6kEqySo2S4s4AQEXkWhhQQyvwKHkaROARrmbgdJ4F6lLSVwtrabrfbHp+78LgTn6iTkX6a7q5ZzF7AWCXa5lSYmSK0+Y0uZGun9dkhq/8IvEVlrEHNnJ7cAAAAASUVORK5CYII=")
+              September 1, 2015
+            %li.author
+              %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA9ElEQVQ4T6WT4ZEBQRBGnwhOBlwEiIAMyOCIABkQATK4y+BkQASIABmQgXpbM2pravbYuv4ztdvdb7q/7mmQtzawArrBfQTmwCUNb2TyTT4AzcR3A3opJAf4BYYVlW2BUdmXA1hmqwKg7/M/gCtgi0+r28IPMH4FUDxL/UjauIfbFfPPCrxhB6xLY/R7AfQBq6gEfANfoQITrMQ2FdVv+zdmEgllDbxxWqF++nsZgAVdk3x+M9kwdXCctwiYhdWtwShWex0Bsfc6gGKkEeDoVLrzJuEEDMotmCdEpV8JuQlxxT7kNtEn7C54OndtD/ikbdXzaQ/fGi0RJmOihwAAAABJRU5ErkJggg==")
+              Paul S. Chun
+            %li.comments
+              %img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyklEQVQ4T6WTYQ3CMBQGbwrAATgAHMwBEgAlgANQwJCAAxzAHMwBoAByS0u2BDI6mrw/27tLX/s148+VfeBzYA5MQ9lyDXUCzk2mKRA4NKBve1O2CkKiYBnglIGUFArGwAUYptDAHZgpKIBFIhzbjwo0DXoKKgXPnnCNKaiAUU9JqWADrHsKtgo8fcMxSZSUQB5zoOSWIKhhL6CZxF8O8wHsQnl77yQaY8Pk2oeR/BbDZbMRdtQajCvuQKvNhqr1WLrG+vQau5jW/xe4tSQP9A9XzQAAAABJRU5ErkJggg==")
+              10 Comments
+          .body
+            .colors
+              .color-1
+              .color-2
+              .color-3
+            %p
+              One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops
 
-      %article
-        .colors
-          .color-1
-          .color-2
-          .color-3
-        %h2 Recent Posts
+
+
+    .col-xs-3
+      %aside
         %ul
-          %li= link_to 'Post 4', '#'
-          %li= link_to 'Post 3', '#'
-          %li= link_to 'Post 2', '#'
-          %li= link_to 'Post 1', '#'
+          %li
+            .title About the Author
+            = gravatar class: 'portrait'
+            %p
+              Hello. My name is Paul S. Chun, but I go by sixofhearts
+              on most things Internet.
+          %li
+            .title Contact Me
+            = partial 'social_links'
+
+          %li
+            .title Recent Posts
+            %ul.recent-posts
+              %li
+                .timestamp Jun 15, 2015
+                = link_to 'The Reason I Ate Everything', '#'
+              %li
+                .timestamp Jun 15, 2015
+                = link_to 'I Hope That You Can Use Somebody', '#'
+              %li
+                .timestamp Jun 15, 2015
+                = link_to 'If I Did It', '#'
+              %li
+                .timestamp Jun 15, 2015
+                = link_to 'I Said I\'ll Phone Child\'s Aid', '#'
+
+
+!= '<div>Calendar and User Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>'
+
+!= '<div>Speech Bubble Icon made by <a href="http://yanlu.de" title="Yannick">Yannick</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>'
+
+!= '<div>LinkedIn, GitHub, Envelope Icon made by <a href="http://www.danielbruce.se" title="Daniel Bruce">Daniel Bruce</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>'
+
+!= '<div>Twitter Icon made by <a href="http://www.elegantthemes.com" title="Elegant Themes">Elegant Themes</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>'
