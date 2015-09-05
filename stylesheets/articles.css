@@ -25,56 +25,59 @@ aside {
     border-radius: 64px; }
   /* line 26, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
   aside .social-links {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
     justify-content: center;
     align-items: center;
     height: 32px; }
-    /* line 32, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+    /* line 35, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
     aside .social-links svg {
       height: 24px; }
-    /* line 36, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+    /* line 39, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
     aside .social-links li {
       width: 48px; }
-      /* line 39, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+      /* line 42, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
       aside .social-links li a svg {
         transition: all 0.25s; }
-      /* line 41, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+      /* line 44, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
       aside .social-links li a:hover svg, aside .social-links li a.hoverEffect svg {
         height: 32px; }
-  /* line 50, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+  /* line 53, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
   aside .twitter a:hover svg, aside .twitter a.hoverEffect svg {
     fill: #4099FF; }
-  /* line 53, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+  /* line 56, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
   aside .linkedin a:hover svg, aside .linkedin a.hoverEffect svg {
     fill: #007BB6; }
-  /* line 56, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+  /* line 59, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
   aside .github a:hover svg, aside .github a.hoverEffect svg {
     fill: gray; }
-  /* line 59, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+  /* line 62, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
   aside .email a:hover svg, aside .email a.hoverEffect svg {
     fill: orange; }
-  /* line 62, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+  /* line 65, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
   aside .title {
     margin-top: 4em;
     font-size: 1em;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: bold; }
-    /* line 68, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+    /* line 71, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
     aside .title:after {
       display: block;
       content: "";
       width: 30%;
       margin: 0.5em auto;
       border-bottom: 2px solid #14C123; }
-  /* line 77, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+  /* line 80, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
   aside p {
     margin: 1em 0 0 0;
     line-height: 1.75em; }
-  /* line 82, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+  /* line 85, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
   aside .recent-posts li {
     margin-bottom: 1em; }
-    /* line 84, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
+    /* line 87, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_sidebar.scss */
     aside .recent-posts li .timestamp {
       font-weight: bold; }
 /* line 1, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
@@ -96,44 +99,46 @@ article {
       color: black; }
   /* line 19, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
   article h2 {
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     font-size: 1.75em;
     font-weight: bold;
     margin-top: 1.5em; }
-  /* line 27, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+  /* line 28, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
   article .metadata {
     font-size: 0.9em;
     padding: 0;
     margin: 1em 0;
     list-style: none;
+    display: -webkit-flex;
     display: flex;
     justify-content: flex-start;
     text-transform: uppercase;
     align-items: center;
     letter-spacing: 1px;
     opacity: 0.5; }
-    /* line 39, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+    /* line 41, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
     article .metadata a {
       color: black; }
-    /* line 43, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+    /* line 45, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
     article .metadata li {
       margin-right: 3em; }
-    /* line 47, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+    /* line 49, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
     article .metadata img {
       width: 16px; }
-  /* line 52, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+  /* line 54, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
   article .article-content {
     background-color: white;
     padding: 2em 3em; }
-    /* line 56, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+    /* line 58, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
     article .article-content .article-image img {
       max-width: 62%;
       border: 5px solid white;
       outline: 1px solid #CCC;
       float: right;
       margin: 0 0 3em 3em; }
-    /* line 64, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+    /* line 66, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
     article .article-content p {
       margin-bottom: 1em;
       font-size: 1.5em;
@@ -141,37 +146,55 @@ article {
 /* line 4, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
 .logomark {
   width: 80px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
   align-items: center;
   justify-content: flex-start;
   text-decoration: none;
   padding-left: 0.5em; }
-  /* line 12, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+  /* line 18, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
   .logomark svg {
     height: 32px;
     transition: all 0.4s;
     width: auto; }
-  /* line 18, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+  /* line 24, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
   .logomark path, .logomark rect {
     fill: white;
     transition: all 0.4s; }
-  /* line 24, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+  /* line 30, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
   .logomark:hover path, .logomark:hover rect, .logomark.red path, .logomark.red rect {
     fill: #F03535; }
-  /* line 29, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+  /* line 35, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
   .logomark .vi {
     margin-right: 3px; }
-    /* line 33, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+    /* line 37, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+    .logomark .vi svg {
+      max-width: 32px; }
+    /* line 42, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
     .logomark .vi.pump svg {
       margin-left: 7px;
       height: 24px; }
-      /* line 36, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+      /* line 45, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
       .logomark .vi.pump svg path, .logomark .vi.pump svg rect {
         fill: crimson; }
-  /* line 44, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+  /* line 53, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+  .logomark .heart svg {
+    max-width: 32px; }
+  /* line 57, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
   .logomark .heart.pump svg {
-    height: 48px; }
-    /* line 46, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
+    height: 48px;
+    max-width: 48px; }
+    /* line 60, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_logomark.scss */
     .logomark .heart.pump svg path, .logomark .heart.pump svg rect {
       fill: darkred; }
 /* line 13, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
@@ -195,67 +218,96 @@ nav.navbar.navbar-default.navbar-fixed-top {
   nav.navbar.navbar-default.navbar-fixed-top .top {
     height: 64px;
     list-style: none;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     margin: 0;
     padding: 0;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: center;
     justify-content: flex-start;
     align-items: center; }
-    /* line 40, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+    /* line 46, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
     nav.navbar.navbar-default.navbar-fixed-top .top > li {
       padding: 0 3em 0 0;
       text-transform: uppercase; }
-  /* line 46, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+  /* line 52, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
   nav.navbar.navbar-default.navbar-fixed-top .social-links {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
     display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: center;
     align-items: center;
     height: 32px; }
-    /* line 55, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+    /* line 65, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
     nav.navbar.navbar-default.navbar-fixed-top .social-links li {
       width: 48px;
       text-align: center; }
-    /* line 60, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+    /* line 70, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
     nav.navbar.navbar-default.navbar-fixed-top .social-links svg {
       fill: white;
       height: 20px;
       transition: all 0.25s; }
-    /* line 68, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+    /* line 78, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
     nav.navbar.navbar-default.navbar-fixed-top .social-links a:hover svg, nav.navbar.navbar-default.navbar-fixed-top .social-links a.hoverEffect svg {
       height: 28px; }
-    /* line 75, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+    /* line 85, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
     nav.navbar.navbar-default.navbar-fixed-top .social-links .twitter a:hover svg, nav.navbar.navbar-default.navbar-fixed-top .social-links .twitter a.hoverEffect svg {
       fill: #4099FF; }
-    /* line 78, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+    /* line 88, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
     nav.navbar.navbar-default.navbar-fixed-top .social-links .linkedin a:hover svg, nav.navbar.navbar-default.navbar-fixed-top .social-links .linkedin a.hoverEffect svg {
       fill: #007BB6; }
-    /* line 81, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+    /* line 91, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
     nav.navbar.navbar-default.navbar-fixed-top .social-links .github a:hover svg, nav.navbar.navbar-default.navbar-fixed-top .social-links .github a.hoverEffect svg {
       fill: gray; }
-    /* line 84, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+    /* line 94, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
     nav.navbar.navbar-default.navbar-fixed-top .social-links .email a:hover svg, nav.navbar.navbar-default.navbar-fixed-top .social-links .email a.hoverEffect svg {
       fill: #14C123; }
 
-/* line 91, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+/* line 101, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
 .colors {
-  display: flex; }
-  /* line 93, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+  /* line 107, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
   .colors .color-1, .colors .color-2, .colors .color-3 {
     height: 4px;
     width: 100%; }
-  /* line 97, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+  /* line 111, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
   .colors .color-1 {
     background-color: #14C123; }
-  /* line 100, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+  /* line 114, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
   .colors .color-2 {
     background-color: black; }
-  /* line 103, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+  /* line 117, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
   .colors .color-3 {
     background-color: #F03535; }
 
-/* line 108, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
+/* line 122, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/articles.scss */
 footer {
   opacity: 0.4;
   padding: 1em 0; }
