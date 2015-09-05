@@ -18,19 +18,38 @@ body {
 nav.navbar.navbar-default.navbar-fixed-top {
   background-color: black;
 
+  .logomark {
+    display: flex;
+    justify-content: flex-start;
+    svg {
+      height: 32px;
+      g {
+	fill: white;
+      }
+    }
+    .vi {
+      width: 20px;
+    }
+    .heart {
+    }
+  }
+
   a {
     color: white;
   }
 
   .top {
+    height: 64px;
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: center;
-    li {
-      width: 150px;
-      text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    &> li {
+      padding: 0 5em 0 0;
+      text-transform: uppercase;
     }
   }
 
@@ -40,6 +59,10 @@ nav.navbar.navbar-default.navbar-fixed-top {
     list-style: none;
     display: flex;
     justify-content: center;
+
+    li {
+      margin-right: 1em;
+    }
 
     .twitter {
       a:hover svg, a.hoverEffect svg { fill: #4099FF; }
