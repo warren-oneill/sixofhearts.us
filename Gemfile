@@ -6,6 +6,9 @@ source 'https://rubygems.org'
 gem 'haml', '~> 4.0.7'
 gem "middleman", "~>3.3.12"
 
+# For deploying to GitHub Pages
+gem "middleman-gh-pages", "~>0.0.3"
+
 # For blog support
 gem 'middleman-blog', '~> 3.5.3'
 gem 'nokogiri', '~> 1.6.6.2'
