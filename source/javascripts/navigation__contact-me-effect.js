@@ -1,6 +1,8 @@
 (function() {
   const contactMeLink = document.querySelector('#contact-me-link');
-  const contactMethodIcons = document.querySelectorAll('.social-links a');
+  const contactMethodIcons = document
+	.querySelector('.social-links')
+	.querySelectorAll('a');
 
   contactMeLink.addEventListener("click", function(e) {
     e.preventDefault();

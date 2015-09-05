@@ -44,6 +44,11 @@ nav.navbar.navbar-default.navbar-fixed-top {
 
   a {
     color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover {
+      color: $lime-green;
+    }
   }
 
   .top {
@@ -67,9 +72,26 @@ nav.navbar.navbar-default.navbar-fixed-top {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 32px;
 
     li {
-      margin-right: 1em;
+      width: 48px;
+      text-align: center;
+    }
+
+    svg {
+      fill: white;
+      height: 20px;
+      transition: all 0.25s;
+    }
+
+    a {
+      &:hover, &.hoverEffect {
+	svg {
+	  height: 28px;
+	}
+      }
     }
 
     .twitter {
@@ -85,10 +107,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
       a:hover svg, a.hoverEffect svg { fill: $lime-green; }
     }
 
-    svg {
-      fill: white;
-      height: 20px;
-    }
   }
 }
 
