@@ -10,8 +10,7 @@
     %nav.navbar.navbar-default.navbar-fixed-top
       .container
         %ul.top
-          %li
-            .logomark= link_to partial('logomark'), '/'
+          %li= link_to partial('logomark'), '/'
           %li= link_to 'Articles', '/articles'
           %li= link_to 'Contact', '/'
           %li= partial 'social_links'
