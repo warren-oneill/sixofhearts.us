@@ -40,6 +40,20 @@ nav.navbar.navbar-default.navbar-fixed-top {
     list-style: none;
     display: flex;
     justify-content: center;
+
+    .twitter {
+      a:hover svg, a.hoverEffect svg { fill: #4099FF; }
+    }
+    .linkedin {
+      a:hover svg, a.hoverEffect svg { fill: #007BB6; }
+    }
+    .github {
+      a:hover svg, a.hoverEffect svg { fill: gray; }
+    }
+    .email {
+      a:hover svg, a.hoverEffect svg { fill: $lime-green; }
+    }
+
     svg {
       fill: white;
       height: 20px;

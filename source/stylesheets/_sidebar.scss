@@ -16,14 +16,37 @@ aside {
   .social-links {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 32px;
 
     svg {
       height: 24px;
     }
 
     li {
-      padding: 1em;
+      width: 48px;
+      a {
+	svg { transition: all 0.25s; }
+	&:hover, &.hoverEffect {
+	  svg { 
+	    height: 32px;
+	  }
+	}
+      }
     }
+  }
+
+  .twitter {
+    a:hover svg, a.hoverEffect svg { fill: #4099FF; }
+  }
+  .linkedin {
+    a:hover svg, a.hoverEffect svg { fill: #007BB6; }
+  }
+  .github {
+    a:hover svg, a.hoverEffect svg { fill: gray; }
+  }
+  .email {
+    a:hover svg, a.hoverEffect svg { fill: orange; }
   }
 
   .title {
@@ -52,4 +75,8 @@ aside {
       font-weight: bold;
     }
   }
+
+  
+  
+
 }
