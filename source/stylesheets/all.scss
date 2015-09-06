@@ -134,10 +134,12 @@ a {
 .portrait {
   position: fixed;
   bottom: 0;
-  left: 0;
-  height: 424px;
+  left: -150px;
+  height: 200px;
+  pointer-events: none;
 
   svg {
+    height: 200px;
     position: absolute;
     left: 0;
     top: 0;
@@ -170,12 +172,14 @@ a {
   .vi {
     svg {
       width: 90px;
+      margin-right: 9px;
     }
 
     &.pump {
       svg {
 	width: 60px;
 	margin-left: 30px;
+	margin-right: 0;
 	path, rect {
 	  fill: crimson;
 	}
