@@ -20,8 +20,8 @@
               .color-2
               .color-3
           .article-content
-            .article-image
-              = image_tag(current_page.data.image) if current_page.data.image
+            - if current_page.data.image
+              .article-image= image_tag(current_page.data.image) 
             = yield
 
             #disqus_thread
