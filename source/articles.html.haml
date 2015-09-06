@@ -26,8 +26,7 @@ title: All Articles
                 .color-2
                 .color-3
             .article-content
-              %span.article-image
-                = image_tag(article.data.image) if article.data.image
+              -  if article.data.image
+                .article-image= image_tag(article.data.image)
               = article.summary
-
     .col-md-3= partial 'sidebar'
