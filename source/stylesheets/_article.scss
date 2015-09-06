@@ -55,12 +55,33 @@ article {
     background-color: white;
     padding: 2em 3em;
 
-    .article-image img {
+    .article-image {
       max-width: 62%;
+      max-height: 300px;
       border: 5px solid white;
       outline: 1px solid #CCC;
       float: right;
       margin: 0 0 3em 3em;
+      overflow: hidden;
+
+      img {
+	width: 100%;
+	transition: all 3s;
+      }
+
+      &.grow {
+	img {
+	  width: 110%;
+	  margin:  0 -5%;
+	}
+	&:hover {
+	  img {
+	    transition: all 0.5s;
+	    width: 100%;
+	    margin:  0;
+	  }
+	}
+      }
     }
 
     p {

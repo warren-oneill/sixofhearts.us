@@ -2,7 +2,7 @@
   .container
     .row
       .col-md-9
-        %article
+        %article#page-article
           %h1= current_page.data.title
           %ul.metadata
             %li.posted-at
@@ -20,7 +20,7 @@
               .color-2
               .color-3
           .article-content
-            %span.article-image
+            .article-image
               = image_tag(current_page.data.image) if current_page.data.image
             = yield
 
