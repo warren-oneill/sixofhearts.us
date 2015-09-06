@@ -10,18 +10,22 @@
     = link_to 'Rivalfox', 'https://rivalfox.com/', target: '_blank'
   I previously worked at
   = link_to 'Heyzap', 'https://www.heyzap.com/', target: '_blank'
-  and on various consulting jobs at places like
+  and did consultation work for a handful of companies like
   = link_to 'Autodesk', 'http://www.autodesk.com/', target: '_blank'
   and
   = succeed '.' do
     = link_to 'Society43', 'http://www.society43.com/', target: '_blank'
+
+%p
+  I'm enthusiastic about creativity and leadership in technology, and
+  this page exists to emanate that enthusiasm.
 
 %p I'm interested in building teams of mindful people that collaborate on creating elegant user experiences, clean code and high-functioning architectures.
 
 %p I'm also interested in the topic of personal growth. I think my favorite part of my job is enabling personal growth as an extension of understanding what motivates a person.
 
 %p
-  Some articles I've written recently are:
+  Some pieces I've written recently are:
   %ul
     = list_of article_feed[0, 5] do |article|
       = article.data.published_at.strftime('%b %-e, %Y')
@@ -30,8 +34,8 @@
     %li= link_to "View All Posts &rarr;", "/articles", class: 'view-all'
 
 %p
-  Also, I house my
+  I also house my
   = link_to "r&#233;sum&#233;", '/resume'
   and
   = link_to "curriculum vitae", '/curriculum_vitae'
-  on this page, if you're interested.
+  on this page if you're interested.

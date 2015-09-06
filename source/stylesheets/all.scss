@@ -160,20 +160,23 @@ a {
   align-items: flex-start;
   text-decoration: none;
   padding-left: 0.5em;
+  transition: all 0.4s;
+  cursor: pointer;
 
   svg {
     height: 130px;
     transition: all 0.4s;
   }
 
-  path, rect {
+  g {
     fill: $logo-color;
     transition: all 0.4s;
   }
 
   &:hover, &.red {
-    path, rect {
+    g {
       fill: $off-red;
+      transition: all 0.4s;
     }
   }
 
@@ -187,8 +190,7 @@ a {
       svg {
 	width: 60px;
 	margin-left: 30px;
-	margin-right: 0;
-	path, rect {
+	g {
 	  fill: crimson;
 	}
       }
@@ -202,10 +204,9 @@ a {
 
     &.pump {
       svg {
-	height: 125px;
-	width: 155px;
+	width: 145px;
       }
-      path, rect {
+      g {
 	fill: darkred;
       }
     }
@@ -254,6 +255,8 @@ screen and (min-device-width: 768px) and (max-width: 768px)
   .logomark {
     margin: 0 auto;
     padding-left: 0;
+    justify-content: center;
+    -webkit-justify-content: center;
   }
 
   a.view-all {
