@@ -132,13 +132,28 @@ article {
     background-color: white;
     padding: 2em 3em; }
     /* line 58, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
-    article .article-content .article-image img {
+    article .article-content .article-image {
       max-width: 62%;
+      max-height: 300px;
       border: 5px solid white;
       outline: 1px solid #CCC;
       float: right;
-      margin: 0 0 3em 3em; }
-    /* line 66, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+      margin: 0 0 3em 3em;
+      overflow: hidden; }
+      /* line 67, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+      article .article-content .article-image img {
+        width: 100%;
+        transition: all 3s; }
+      /* line 73, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+      article .article-content .article-image.grow img {
+        width: 110%;
+        margin: 0 -5%; }
+      /* line 78, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
+      article .article-content .article-image.grow:hover img {
+        transition: all 0.5s;
+        width: 100%;
+        margin: 0; }
+    /* line 87, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/_article.scss */
     article .article-content p {
       margin-bottom: 1em;
       font-size: 1.5em;

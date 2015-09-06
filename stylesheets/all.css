@@ -68,7 +68,7 @@ a {
 
 /* line 78, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
 .nav-links, .social-links {
-  margin: 0 0 0 0.75em;
+  margin: 0 0 0 0.25em;
   padding: 0;
   list-style: none;
   font-weight: 900;
@@ -84,7 +84,7 @@ a {
 
 /* line 94, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
 .nav-links {
-  margin-top: 0.5em; }
+  margin-bottom: 0.25em; }
   /* line 96, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
   .nav-links a {
     display: inline-block;
@@ -200,43 +200,44 @@ a {
 
   /* line 235, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
   .lesser-column {
+    margin-left: 0;
     position: relative;
     text-align: center; }
 
-  /* line 240, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
+  /* line 241, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
   .greater-column {
     margin: 1em;
     text-align: center; }
 
-  /* line 245, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
+  /* line 246, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
   .portrait {
     position: relative; }
 
-  /* line 249, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
+  /* line 250, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
   .nav-links {
     padding: 0;
     margin: 0; }
 
-  /* line 254, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
+  /* line 255, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
   .social-links {
     justify-content: center;
     -webkit-justify-content: center;
     margin: 0; }
 
-  /* line 260, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
+  /* line 261, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
   .logomark {
     margin: 0 auto;
     padding-left: 0;
     justify-content: center;
     -webkit-justify-content: center; }
 
-  /* line 267, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
+  /* line 268, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
   a.view-all {
     display: inline-block;
     border: 2px solid #F03535;
     padding: 0.25em 1em;
     margin-top: 1em; }
-    /* line 272, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
+    /* line 273, /Users/paulschun/Work/Personal/sixofhearts.us/source/stylesheets/all.scss */
     a.view-all:hover {
       background-color: #F03535;
       color: white;
