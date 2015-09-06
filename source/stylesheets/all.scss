@@ -20,11 +20,13 @@ a {
 }
 
 .homepage {
+  display: -webkit-flex;
   display: flex;
 }
 
 #personal-page-link {
-  display: inline-block;
+  //display: inline-block;
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -48,7 +50,7 @@ a {
 }
 
 .greater-column {
-  margin: 0 75px 0 550px;
+  margin: 0 75px 0 400px;
   padding: 0 1em 1em 1em;
   
   p, ul {
@@ -99,11 +101,15 @@ a {
 }
 
 .social-links {
+  display: -webkit-flex;
   display: flex;
   li {
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     margin-right: 0.25em;
     width: 2em;
     height: 2em;
@@ -148,7 +154,9 @@ a {
 
 
 .logomark {
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: flex-start;
   align-items: flex-start;
   text-decoration: none;
   padding-left: 0.5em;
@@ -239,6 +247,7 @@ screen and (min-device-width: 768px) and (max-width: 768px)
 
   .social-links {
     justify-content: center;
+    -webkit-justify-content: center;
     margin: 0;
   }
 
