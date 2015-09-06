@@ -1,6 +1,6 @@
 ---
 title: Three Things You Get For Free by Quitting Facebook
-image: "http://static.sixofhearts.us/tlhs_grad.jpg"
+image: "/images/article-images/guy-on-facebook.jpg"
 published_at: 2015-09-07 20:11:15 +0200
 ---
 
